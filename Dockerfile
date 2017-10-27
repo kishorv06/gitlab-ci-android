@@ -21,7 +21,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 # Constraint Layout / [Solver for ConstraintLayout 1.0.0-alpha8, ConstraintLayout for Android 1.0.0-alpha8]
 RUN mkdir -p $ANDROID_HOME/licenses/
-RUN echo "8933bad161af4178b1185d1a37fbf41ea5269c55" > $ANDROID_HOME/licenses/android-sdk-license
+RUN echo -e "8933bad161af4178b1185d1a37fbf41ea5269c55\nd56f5187479451eabf01fb78af6dfcb131a6481e" > $ANDROID_HOME/licenses/android-sdk-license
 
 RUN apt-get -qq update && \
     apt-get install -qqy --no-install-recommends \
