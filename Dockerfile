@@ -34,7 +34,7 @@ RUN curl https://storage.googleapis.com/git-repo-downloads/repo > repo && \
     rm repo
 RUN mkdir DotOS && \
     cd DotOS
-RUN repo init -u git://github.com/DotOS/manifest.git -b dot-o && \
-    repo sync  -f --force-sync --no-clone-bundle
+RUN repo init -u git://github.com/DotOS/manifest.git -b dot-o
+RUN repo sync  -f --force-sync --no-clone-bundle
 
 
